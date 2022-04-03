@@ -1,0 +1,30 @@
+ <beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+   <bean id="ques" class="mvn_demo.question">
+   <property name="questionid" value="1"></property>
+   <property name="question" value="How are you?"></property>
+   <property name="answers">
+   <list>
+   <value>I am fine </value>
+   <value>Fine and doing good</value>
+   </list>
+   </property>
+   <property name="answers1">
+   <set>
+   <value> I am OK!</value>
+   <value>I am fine</value>
+   </set>
+   </property>
+   <property name="answers2">
+   <map>
+    <entry key= "1" value="I am good"/>
+   <entry key ="2" value ="I am fine"/>
+   </map>
+   </property>
+   </bean>
+ </beans>

@@ -1,0 +1,18 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+   <context:component-scan base-package="mvn_demo"></context:component-scan>
+   <bean id="bankacc" class="mvn_demo.BankAcc">
+   <property name="accountId" value="16373"></property>
+   <property name="accountHolderName" value="Avanthika"></property>
+   <property name="accountType" value="Savings"></property>
+   <property name="accountBalance" value="1000"></property>
+   </bean>
+   <bean id="sil" class="mvn_demo.BankAccountServiceImpl"></bean>
+   <bean id="ril" class="mvn_demo.BankAccountrepositoryImpl"></bean>
+   <bean id="bcon" class="mvn_demo.BankAccountController"> </bean>
+   </beans>

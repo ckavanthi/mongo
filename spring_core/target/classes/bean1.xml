@@ -1,0 +1,22 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+   
+   <bean id="addr" class="mvn_demo.address">
+   <property name="street" value="velayutham"></property>
+   <property name="city" value="karur"></property>
+   <property name="state" value="TamilNadu"></property>
+   <property name="zip" value="639117"></property>
+   <property name="country" value="India"></property>
+   </bean>
+    <bean id="co" class="mvn_demo.customer">
+    <property name="customerName" value="avi"></property>
+    <property name="customerAddress" value="addr"></property>
+    <property name="customerId" value="4"></property>
+    <property name="customerContact" value="8"></property>
+    </bean>
+ </beans>
